@@ -1,0 +1,732 @@
+body
+{
+	margin: 0;
+	font-family: raleway, san-serif;
+	text-align: center;
+}
+
+*
+{
+	box-sizing: border-box;
+}
+
+header
+{
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+nav
+{
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+    background-color: #000;
+}
+
+nav img
+{
+    width: 170px;
+    float: left;
+    padding: 15px
+}
+
+nav ul
+{
+    list-style: none;
+    float: right;
+}
+
+nav ul li
+{
+    padding: 5px 0px;
+    display: inline-block;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 0 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+nav ul li a:hover
+{
+    color: #00CC00;
+}
+
+.text h1
+{
+    position: absolute;
+    color: white;
+    top: 40%;
+    right: 0;
+    left: 0;
+}
+
+.text h1 span
+{
+    font-weight: 300;
+}
+
+#down
+{
+    width: 100%;
+    height: 100px;
+}
+
+.center
+{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.down
+{
+    content: '';
+    position: relative;
+    width: 50px;
+    height: 80px;
+    border-radius: 20px;
+    border:4px solid white;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%, -0);
+    overflow: hidden;
+}
+
+.down:before
+{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: white;
+    animation: animate 1s linear infinite;
+}
+
+.down:after
+{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 15px;
+    border-radius: 6px;
+    background-color: white;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%,0)
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translate(-50%, 20px);
+        opacity: 0
+    }
+    
+    80%
+    {
+        transform: translate(-50%,60px)
+    }
+    
+    100%
+    {
+        transform: translate(-50%, 100px)
+    }
+}
+
+
+.container1
+{
+	width: 100%;
+	height: 650px;
+}
+
+.container1 .kiri
+{
+	width: 50%;
+	height: 500px;
+	float: left;
+}
+
+.container1 .kiri h1
+{
+	margin-top: 100px;
+	color: #00CC00;
+}
+
+.container1 .kiri h2
+{
+	padding: 20px;
+	margin-left: 100px;
+	text-indent: 50px;
+	text-align: left;
+}
+
+.container1 .kiri .button
+{
+	padding: 10px 20px;
+	background-color: #00CC00;
+	text-decoration: none;
+	color: white;
+	float: right;
+	margin-right: 100px;
+	font-weight: 700;
+}
+
+.container1 .kiri .button span
+{
+	overflow: hidden;
+	opacity: 0;
+	margin-left: -10px;
+	transition: .5s;
+}
+
+.container1 .kiri .button:hover span 
+{
+	opacity: 1;
+	margin-left: 10px;
+}
+
+.container1 .kanan
+{
+	width: 50%;
+	height: 500px;
+	float: left;
+}
+
+.container1 .kanan img
+{
+	margin-top: 50px;
+	background-position: center;
+}
+
+.container2
+{
+	width: 100%;
+	height: 600px;
+}
+
+.container2 h1
+{
+	color: #00CC00;
+	margin-bottom: 50px;
+}
+
+.container2 .kotak
+{
+	width: 23%;
+	height: 500px;
+	margin: 0 1%;
+	float: left;
+}
+
+.container2 .kotak .icon
+{
+	color: #898989;
+	margin-top: 20px;
+	transition: .5s;
+}
+
+.container2 .kotak .icon:hover
+{
+	color: #00CC00;
+	transform: scale(1.1);
+}
+
+.garis
+{
+	width: 30px;
+	height: 5px;
+	background-color: #00CC00;
+	margin: auto;
+}
+
+.container2 .kotak .text1
+{
+	width: 100%;
+	height: 50%;
+	margin-top: 20px;
+}
+
+.container2 .kotak .text1 p
+{
+	text-align: justify;
+	text-indent: 50px;
+	padding: 10px 20px;
+	font-size: 20px;
+}
+
+.container2 .kotak .button
+{
+	padding: 10px 20px;
+	background-color: #00CC00;
+	text-decoration: none;
+	color: white;
+	float: right;
+	margin-right: 20px;
+	font-weight: 700;
+}
+
+.container2 .kotak .button span
+{
+	overflow: hidden;
+	opacity: 0;
+	margin-left: -10px;
+	transition: .5s;
+}
+
+.container2  .kotak .button:hover span 
+{
+	opacity: 1;
+	margin-left: 10px;
+}
+
+.kotak1
+{
+    width: 95%;
+    height: 1000px;
+    margin: -10px auto;
+    box-shadow: 0px 0px 100px 10px #000;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.kotak1 h1
+{
+    color: #00CC00;
+    font-size: 40px;
+    padding: 30px;
+}
+
+.kotak1 h2
+{
+    font-weight: 500;
+    padding: 50px 100px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.kotak1 .list
+{
+    width: 50%;
+    float: left;
+}
+
+.kotak1 .list h1
+{
+    font-size: 30px;
+}
+
+.kotak1 .list p
+{
+    margin-top: 70px;
+    padding: 0px 100px;
+    font-size: 1.1em;
+}
+
+.kotak1 .dalem
+{
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+    
+}
+
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 200px; /* height of carousel */
+  margin-right: 10px;
+}
+
+.garis1
+{
+	width: 30px;
+	height: 5px;
+	background-color: #00CC00;
+	margin: -30px auto;
+}
+
+.kotak2
+{
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+}
+
+.kotak2 h1
+{
+    color: #00CC00;
+    padding: 20px 0px;
+}
+
+.kotak2 .bungkus
+{
+    width: 30%;
+    height: 500px;
+    margin: 0 1.6%;
+    float: left;
+    transform: scale(.995);
+    border: 5px solid #00CC00;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.kotak2 .bungkus:hover
+{
+    transform: scale(1);
+    box-shadow: 1px 1px 20px 1px #898989;
+}
+
+.kotak2 .icon i
+{
+    color: gold;
+    margin: 0px 10px;
+    padding-top: 20px;
+}
+
+.kotak2 .icon h2
+{
+    color: #00CC00;
+    letter-spacing: 2px;
+}
+
+.kotak2 .icon h2 span
+{
+    font-weight: 500;
+}
+
+.kotak2 .price
+{
+    width: 90%;
+    height: 50%;
+    border-top: 3px solid darkgreen;
+    margin: auto;
+}
+
+.kotak2 .price p
+{
+    font-size: 20px;
+    padding: 15px 30px;
+    color: #000;
+    text-align: center;
+    font-weight: 600
+}
+
+.kotak2 .bungkus .button
+{
+	padding: 10px 20px;
+	background-color: #00CC00;
+	text-decoration: none;
+	color: white;
+	float: right;
+	margin-right: 20px;
+	font-weight: 700;
+}
+
+.kotak2 .bungkus .button span
+{
+	overflow: hidden;
+	opacity: 0;
+	margin-left: -10px;
+	transition: .5s;
+}
+
+.kotak2 .bungkus .button:hover span 
+{
+	opacity: 1;
+	margin-left: 10px;
+}
+
+.img1
+{
+	background-image: url(../img/bg2.jpg);
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+.container4
+{
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+
+.container4 h1
+{
+	margin: auto;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	padding: 150px;
+}
+
+.container5
+{
+	position: relative;
+	width: 100%;
+	height: 650px;
+}
+
+.container5 h1
+{
+	margin: auto;
+	color:  #00CC00;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.container5 .kotak3
+{
+	width: 30%;
+	height: 400px;
+	border:2px solid #00CC00;
+	float: left;
+	border-radius: 5px;
+	margin: 0 1.6%;
+	margin-top: 50px;
+	box-shadow: 2px 2px 10px 2px #898989;
+	transition: .3s;
+}
+
+.container5 .kotak3:hover
+{
+	box-shadow: 3px 3px 12px -15px #898989;
+	transform: scale(.98);
+}
+
+.container5 .kotak3 .foto1 img
+{
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+}
+
+.container5 .kotak3 h3
+{
+	padding: 30px;
+	font-weight: 600;
+	color: #898989;
+	text-align: center;
+}
+
+.img
+{
+    width: 100%;
+    height: 300px;
+    background: url(../img/bg4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin-top: 20px;
+}
+
+.img h1
+{
+    padding-top: 50px;
+    color: white;
+}
+
+.img .email
+{
+    margin-top: 50px;
+    width: 400px;
+    height: 40px;
+    padding: 0px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 3px solid #00cc00;
+    border-radius: 10px;
+}
+
+.img i
+{
+    color: white;
+    padding: 11px 20px;
+    background-color: #00cc00;
+    border-radius: 10px;
+    transition: .5s;
+    margin-left: -2px
+}
+
+.img i:hover
+{
+    border-radius: 0px;
+}
+
+.container6
+{
+    width: 100%;
+    height: 500px;   
+}
+
+.container6 h1
+{
+    color: #00cc00;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+}
+
+.container6 .kotak5
+{
+    width: 50%;
+    border-right: 3px solid #00cc00;
+    height: 350px;
+    float: left;
+}
+
+.container6 .kotak5 p
+{
+    text-align: left;
+    font-size: 25px;
+    margin-left: 20%;
+    font-weight: 600;
+    color: #898989
+}
+
+.container6 input
+{
+    display: block;
+    margin-left: 20%;
+    margin-top: -25px;
+    padding: 10px;
+    width: 450px;
+    border: 2px solid #00cc00;
+}
+
+.container6 .kotak6
+{
+    border-left: 3px solid #00cc00;
+    width: 50%;
+    height: 350px;
+    float: left;
+}
+
+.container6 .kotak6 p
+{
+    font-size: 25px;
+    font-weight: 600;
+    color: #898989;
+    text-align: left;
+    margin-left: 20%;
+}
+
+.container6 .kotak6 textarea
+{
+    display: block;
+    margin-left: 20%;
+    margin-top: -25px;
+    width: 450px;
+    max-width: 450px;
+    height: 200px;
+    max-height: 200px;
+    border: 2px solid #00cc00;
+    font-size: 15px;
+    padding: 10px;
+    font-family: raleway;
+}
+
+.container6 .kotak6 .button
+{
+	padding: 10px 20px;
+	background-color: #00CC00;
+	text-decoration: none;
+	color: white;
+	float: right;
+    margin-top: 20px;
+	margin-right: 95px;
+	font-weight: 700;
+}
+
+.container6 .kotak6 .button span
+{
+	overflow: hidden;
+	opacity: 0;
+	margin-left: -10px;
+	transition: .5s;
+}
+
+.container6 .kotak6 .button:hover span 
+{
+	opacity: 1;
+	margin-left: 10px;
+}
+
+footer
+{
+    margin-top: 50px;
+	width: 100%;
+	height: 150px;
+	background-color: #00CC00;
+	border-top:5px solid darkgreen;
+}
+
+footer .kotak
+{
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	margin: -28px auto;
+	transform: rotate(45deg);
+	background-color: #00CC00;
+	border-top: 5px solid darkgreen;
+	border-left: 5px solid darkgreen;
+}
+
+.fa-chevron-up
+{
+	color: darkgreen;
+	transform: rotate(-45deg);
+	margin-top: -10px;
+	margin-left: -16px;
+}
+
+footer .copy
+{
+	font-size: 25px;
+	color: white;
+	padding-top: 50px;
+	font-family: sans-serif;
+}
+
+footer .sosialmedia
+{
+	margin-top: 20px;
+}
+
+footer .fa-facebook, .fa-twitter, .fa-instagram
+{
+	margin: 0 20px;
+	color: white;
+	transition: .7s;
+}
+
+footer .fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover
+{
+	color: darkgreen;
+	transform: scale(1.3);
+	transform: rotate(360deg); 
+}
